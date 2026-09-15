@@ -15,7 +15,7 @@ import os
 from google import genai
 from google.genai import types
 
-MODEL_NAME = "gemini-2.5-flash"  # swap here if you have access to a newer one
+MODEL_NAME = "gemini-3.6-flash"  # swap here if you have access to a newer one
 NO_ANSWER_MESSAGE = "I couldn't find relevant information in the provided documents."
 
 SYSTEM_PROMPT = (
