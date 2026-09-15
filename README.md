@@ -24,9 +24,6 @@ what you're asking questions about.
    GEMINI_API_KEY=your-actual-key-here
    ```
 
-   Get a key at https://aistudio.google.com/apikey. `.env` is gitignored --
-   it will not be committed.
-
 3. Run the app:
 
    ```
@@ -35,9 +32,9 @@ what you're asking questions about.
 
 ## Environment variables
 
-| Variable | Required | Description |
-|---|---|---|
-| `GEMINI_API_KEY` | Yes | Used to call the Gemini API for grounded answer generation. Without it, you can still upload and ingest documents, but asking questions will fail with a clear error telling you to set this. |
+| Variable         | Required | Description                                                                                                                                                                                   |
+| ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GEMINI_API_KEY` | Yes      | Used to call the Gemini API for grounded answer generation. Without it, you can still upload and ingest documents, but asking questions will fail with a clear error telling you to set this. |
 
 No other configuration is required. The embedding model (`sentence-transformers`,
 `all-MiniLM-L6-v2`) runs locally and needs no API key -- it downloads its
